@@ -11,6 +11,10 @@ server:
         secure: true
         http-only: true
 spring:
+  application:
+    name: demo-spring-thymeleaf
+  thymeleaf:
+    cache: false
   main:
     allow-bean-definition-overriding: true
   http:
