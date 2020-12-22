@@ -2,8 +2,11 @@ server:
   port: 8080
   tomcat:
     uri-encoding: UTF-8
+#    可创建的最大线程数
     max-threads: 200
+#    最大请求数
     accept-count: 100
+#    链接建立超时时间
     connection-timeout: PT5S
   servlet:
     session:
@@ -15,6 +18,11 @@ spring:
     name: demo-spring-thymeleaf
   thymeleaf:
     cache: false
+    mode: THML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    prefix: classpath:/templates/
   main:
     allow-bean-definition-overriding: true
   http:
@@ -22,6 +30,7 @@ spring:
       force: true
       charset: UTF-8
       enabled: true
+#  数据库连接
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/demo?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai

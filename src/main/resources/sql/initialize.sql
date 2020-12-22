@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS demo DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+-- 初始化SQL
 
 CREATE TABLE If Not Exists `demo` (
   `id` bigint NOT NULL AUTO_INCREMENT COMMENT '自增ID',
